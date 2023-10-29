@@ -220,9 +220,9 @@ def index():
             'paragraph' : artikel
         }
         
-        #return render_template('result.html',  artikel=artikel, result=result)
+        return render_template('result.html',  artikel=artikel, result=result)
         #or
-        return jsonify(finalResults)
+        #return jsonify(finalResults)
     return render_template('home.html')
 
 if __name__ == '__main__':
